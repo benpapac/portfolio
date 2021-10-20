@@ -1,0 +1,77 @@
+.App {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template: 10% 80% 10%/10% 80% 10%;
+}
+
+header {
+  grid-row: 1;
+  grid-column: 1 /span 3;
+
+  background: rgba(130, 235, 203);
+  padding: 1rem;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: space-around;
+
+  text-decoration: none;
+
+}
+
+main {
+  grid-row: 2;
+  grid-column: 1/span 3;
+  background: rgba(07, 133, 102, 1);
+
+  display: grid;
+  grid-template: 1fr/20% 60% 20%;
+}
+
+menu {
+    grid-row: 2;
+    grid-column: 1;
+}
+
+aside {
+    grid-row: 1/span 3;
+    grid-column: 3;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+
+    overflow: auto;
+
+}
+
+footer {
+  grid-row: 3;
+  grid-column: 1/span 3;
+}
+
+button {
+  background: transparent;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.link:hover {
+  color: gray;
+}
+
+.screen {
+    grid-column: 2;
+
+    display: grid;
+    grid-template-rows: repeat(auto-fill, minmax(50px, 1fr) ) ;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr) ) ;
+
+
+}

@@ -1,0 +1,11 @@
+
+.photo {
+    width: 60%;
+    height: fit-content;
+    opacity: 0.8;
+}
+
+#focus {
+    width: 90%;
+    opacity: 1;
+}
