@@ -1,0 +1,17 @@
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    height: 100%;
+}
+
+.project {
+    height: 300px;
+}
+
+
+
+@media(min-width: 500px) {
+    .project-list {
+        grid-column: 2;
+    }
+}

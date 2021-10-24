@@ -6,8 +6,8 @@ import {GameContext} from './GameContext';
 
 import Nav from './components/Nav/Nav';
 import Home from './components/Home/Home';
-import Acting from './components/Acting/Acting';
-import Programming from './components/Programming/Programming';
+import Thoughts from './components/Thoughts/Thoughts.jsx';
+import Projects from './components/Projects/Projects';
 
 
 function App() {
@@ -29,12 +29,12 @@ function App() {
                 <Home />
               </Route>
 
-              <Route exact path='/acting'>
-                <Acting />
+              <Route exact path='/thoughts'>
+                <Thoughts component={Thoughts} />
               </Route>
 
-              <Route exact path='/programming'>
-                <Programming />
+              <Route exact path='/projects'>
+                <Projects />
               </Route>
             
           </main>

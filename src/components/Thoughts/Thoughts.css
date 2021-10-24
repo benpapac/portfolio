@@ -1,0 +1,72 @@
+
+
+.thought-list {
+    padding: 1rem;
+    grid-column: 1/span 2;
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: auto;
+    background: rgba(235,255,220,0.3)
+
+}
+.thought-list::-webkit-scrollbar {
+    display: none;
+}
+
+.thought {
+    margin-top: 1rem;
+    width: 100%;
+    background: linear-gradient(rgba(255,255,255,0.5)35%, rgba(255,255,255,0) 53%);
+
+    display: grid;
+    grid-template: 1fr 3fr/ 1fr 1fr;
+}
+.date {
+    align-self: right;
+}
+
+.body {
+    grid-column: 1/span 2;
+    max-width: 80%;
+    height: fit-content;
+
+    line-height: 1.1;
+    font-weight: 200;
+}
+
+.medium {
+    grid-column: 2;
+    margin-top: -30px;
+    color: black;
+    font-weight: 300;
+    justify-self: right;
+}
+
+.background {
+    z-index: -1;
+    position: fixed;
+    top: 100px;
+
+    margin: 0 auto;
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+.photo {
+    width: 60%;
+    height: fit-content;
+    opacity: 0.8;
+    margin-bottom: 10rem;
+}
+
+@media(min-width: 500px) {
+  
+
+}

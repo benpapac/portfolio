@@ -1,4 +1,5 @@
 .App {
+  z-index: -2;
   height: 100vh;
   width: 100vw;
   display: grid;
@@ -9,7 +10,7 @@ header {
   grid-row: 1;
   grid-column: 1 /span 3;
 
-  background: rgba(130, 235, 203);
+  background: rgb(172, 236, 234);
   padding: 1rem;
 
   display: flex;
@@ -21,31 +22,32 @@ header {
 }
 
 main {
-  grid-row: 2;
+  grid-row: 2/span 2;
   grid-column: 1/span 3;
-  background: rgba(07, 133, 102, 1);
+  /* background: rgba(07, 133, 102, 1); */
 
-  display: grid;
-  grid-template: 1fr/20% 60% 20%;
+  display: flex;
+  flex-direction: column;
+  
 }
 
 menu {
-    grid-row: 2;
-    grid-column: 1;
+  grid-row: 1/span 3;
+  grid-column: 1;
 }
 
 aside {
-    grid-row: 1/span 3;
-    grid-column: 3;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    padding: 1rem;
-
-    overflow: auto;
-
+  grid-row: 1/span 3;
+  grid-column: 3;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  
+  overflow: auto;
+  
 }
 
 footer {
@@ -66,12 +68,16 @@ button {
   color: gray;
 }
 
-.screen {
-    grid-column: 2;
+.headline {
+  grid-column: 1/span 3;
+  align-self: center;
+  justify-self: center;
+}
 
-    display: grid;
-    grid-template-rows: repeat(auto-fill, minmax(50px, 1fr) ) ;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr) ) ;
+@media(min-width: 500px) {
+  main {
+    grid-row: 2;
+    grid-template-columns: 1fr 8fr 1fr;
 
-
+  }
 }
