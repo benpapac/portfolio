@@ -14,9 +14,13 @@
 .project {
     text-align: center;
     margin: 2em 0;
-    /* background: rgba(255,255,255,0.4); */
+    background: rgba(255,255,255,0.6);
     backdrop-filter: blur(2px);
     height: fit-content;
+}
+
+.summary {
+    text-align: left;
 }
 
 .title {

@@ -28,8 +28,9 @@ const Projects = () => {
                     <div className="project" >
                         <h3 className="title">{project.title}</h3>
                         <img className="screencap" src={project.image} alt={project.alts.image}/>
-                        <p>{project.summary}</p>
+                        <p className="summary">{project.summary}</p>
                         <a href={project.link} alt={project.alts.link}>See the project here</a>
+                        <br/>
                         <a href={project.repo} alt={project.alts}> Or, go to the repo</a>
                     </div>
                 )
