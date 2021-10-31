@@ -11,6 +11,10 @@
     overflow: auto;
 }
 
+.project-list::-webkit-scrollbar {
+    display: none;
+}
+
 .project {
     text-align: center;
     margin: 2em 0;
