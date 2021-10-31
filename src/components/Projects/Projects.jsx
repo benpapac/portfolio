@@ -8,7 +8,6 @@ const Projects = () => {
      const getProjects = async () => {
         try {
         setProjects(json);
-            console.log(projects);
         } catch(err) {
             console.log(err);
         }
