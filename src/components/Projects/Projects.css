@@ -4,8 +4,8 @@
 }
 
 .project-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    display: flex;
+    flex-direction: column;
     height: 80vh;
 
     overflow: auto;
@@ -21,6 +21,10 @@
 
 .title {
     font-size: 20px;
+}
+
+.screencap {
+    width: 80%;
 }
 
 
