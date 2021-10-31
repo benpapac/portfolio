@@ -2,14 +2,12 @@ import {useCallback, useEffect, useState} from 'react';
 import { useHistory } from 'react-router';
 import './Thoughts.css';
 import './Thoughts.json';
-import axios from 'axios';
 import ReactScrollWheelHandler from 'react-scroll-wheel-handler';
 
 
 
 const Thoughts = () => {
     const json = require('./Thoughts.json');
-    const history = useHistory();
     const [thoughts, setThoughts] = useState([]);
     const [lastScroll, setLastScroll] = useState(0);
 
@@ -40,72 +38,15 @@ const Thoughts = () => {
        getThoughts();
         }
     );
-
-    const getScrollDirection = (event) => {
-        let scroll = event.target.scrollTop;
-        if (scroll - lastScroll <= -10){
-            setLastScroll(scroll);
-            return 'up'
-        } 
-        else {
-            setLastScroll(scroll);
-            return 'down';
-        }
-    }
-
-    const handleScroll = (event) => {
-        let direction = getScrollDirection(event);
-        if (direction === 'up') handleScrollUp();
-        else handleScrollDown();
-        console.log(direction);
-    }
-
-    const handleScrollUp = async (event) => {
-        try {
-            let newPhoto;
-            let preloadPhoto;
-            if(photos.indexOf(photo) === photos.length-2) {
-                newPhoto = await  setPhoto(nextPhoto);
-                preloadPhoto = await setNextPhoto(photos[0]);
-            } else {
-                newPhoto = await setPhoto(nextPhoto);
-                preloadPhoto = await setNextPhoto(photos[photos.indexOf(photo)+1]);
-            }
-            console.log(newPhoto, preloadPhoto);
-
-        } catch(err){
-
-            console.log(err)
-        }
-    }
-
-        const handleScrollDown = async (event) => {
-            try {
-                let newPhoto;
-                let preloadPhoto;
-                if(photos.indexOf(photo) === 1) {
-                 newPhoto = await setPhoto(nextPhoto);
-                 preloadPhoto = await setNextPhoto(photos[photos.length -1]);
-            } else {
-                 newPhoto = await setPhoto(nextPhoto);
-                 preloadPhoto = await setNextPhoto(photos[photos.indexOf(photo)-1]);
-            }
-            console.log(newPhoto, preloadPhoto);
-            } catch (err) {
-                console.log(err)
-            }
-            
-        }
-
     
     return (
-        <>
+        <div className="thoughts-main">
         <section className="thought-list" >
             {thoughts.map(thought => {
                 return (
                 <div className="thought">
-                <h3>{thought.headline}</h3>
-                <h6 className='date'>{thought.date}</h6>
+                <h2>{thought.headline}</h2>
+                <h3 className='date'>{thought.date}</h3>
                 <p className="body">{thought.blurb}</p>
                 <a className='medium' href={thought.link}>read more</a>
                 </div>
@@ -113,17 +54,7 @@ const Thoughts = () => {
             })}
         </section>
 
-        <ReactScrollWheelHandler className="background"
-            upHandler={handleScrollUp}
-            downHandler={handleScrollDown}>
-            {/* {photos.map(photo => { */}
-                {/* return( */}
-                    <img className="photo" src={photo.devUrl} alt={photo.alt} />
-                {/* ); */}
-            {/* } */}
-            {/* )} */}
-        </ReactScrollWheelHandler>
-        </>
+        </div>
 
 
 );

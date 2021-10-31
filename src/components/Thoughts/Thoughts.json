@@ -6,12 +6,6 @@
         "link": "link"
     },
     {
-        "headline": "Ben works really hard",
-        "date": "Aug 21, 2021",
-        "blurb": "You should hire him because he's nice.",
-        "link": "link"
-    },
-    {
         "headline": "Cities, Genres, and Titles, oh my!",
         "date": "Oct 22, 2021",
         "blurb": "So, I’m almost done with my full stack immersive at General Assembly, and I made a really exciting feature for Project 3! We needed to make a full CRUD app, with a MongoDB database, and there’s all kinds of interesting stuff to talk about, BUT, I tend to gravitate toward User Experience, visual design, and other delightful things you can find in the world of Front End Development...",
