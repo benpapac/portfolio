@@ -13,10 +13,10 @@ import Resume from './components/Resume/Resume';
 function App() {
   const [gameState, setGameState] = useState(false);
   return (
-		<GameContext.Provider value={
+		<GameContext.Provider value={{
       gameState,
       setGameState
-      }
+     } }
       >
 
         <div className='App'>
