@@ -1,44 +1,11 @@
-
-.headline {
-    text-align: center;
-}
-
-.project-list {
-    display: flex;
-    flex-direction: column;
-    height: 80vh;
-
-    overflow: auto;
-}
-
-.project-list::-webkit-scrollbar {
-    display: none;
-}
-
-.project {
-    text-align: center;
-    margin: 2em 0;
-    background: rgba(255,255,255,0.6);
-    backdrop-filter: blur(2px);
-    height: fit-content;
-}
-
 .summary {
-    text-align: left;
+	text-align: left;
 }
 
 .title {
-    font-size: 1.5em;
+	font-size: 1.5em;
 }
 
 .screencap {
-    width: 80%;
-}
-
-
-
-@media(min-width: 500px) {
-    .project-list {
-        grid-column: 2;
-    }
+	width: 80%;
 }

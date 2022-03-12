@@ -1,40 +1,25 @@
 import { useState, useEffect } from 'react';
 import './Projects.css';
+import projects from './Projects.json';
+import ProjectSlides from '../Slideshow/ProjectSlides';
 
 const Projects = () => {
-    const json = require('./Projects.json');
-    const [projects, setProjects] = useState([]); 
-
-     const getProjects = async () => {
-        try {
-        setProjects(json);
-        } catch(err) {
-            console.log(err);
-        }
-    }
-
-    useEffect( () => {
-        getProjects();
-    })
-
-    return (
-        <div className="projects-main">
-            <h1 className="headline">Projects</h1>
-            <section className="project-list">
-
-            {projects.map(project => {
+    // const [projects, setProjects] = useState([]);
+    const projectSlides = projects.map(project => {
                 return (
-                    <div className="project" >
+                    <>
                         <h3 className="title">{project.title}</h3>
                         <img className="screencap" src={project.image} alt={project.alts.image}/>
                         <p className="summary">{project.summary}</p>
                         <a href={project.link} alt={project.alts.link}>See the project here</a>
                         <br/>
                         <a href={project.repo} alt={project.alts}> Or, go to the repo</a>
-                    </div>
-                )
-            })}
-            </section>
+                    </>
+                )})
+
+    return (
+        <div className="projects-main">
+            <ProjectSlides slideshow={projectSlides}/>
         </div>
     );
 };

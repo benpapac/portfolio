@@ -32,7 +32,6 @@
 	border: solid 3px whitesmoke;
 }
 
-
 .intro {
 	margin: 1em auto;
 	padding: 1em;
@@ -43,7 +42,6 @@
 	flex-direction: column;
 	overflow: hidden;
 }
-
 
 .intro h1 {
 	align-self: flex-start;
@@ -64,7 +62,6 @@
 .home-link {
 	font-size: larger;
 }
-
 
 .body {
 	padding: 1em;
