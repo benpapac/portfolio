@@ -1,7 +1,5 @@
 import './App.css';
-import { useState } from 'react';
 import { Route } from 'react-router';
-import {GameContext} from './GameContext';
 
 import Nav from './components/Nav/Nav';
 import Home from './components/Home/Home';
@@ -11,14 +9,7 @@ import Resume from './components/Resume/Resume';
 
 
 function App() {
-  const [gameState, setGameState] = useState(false);
   return (
-		<GameContext.Provider value={{
-      gameState,
-      setGameState
-     } }
-      >
-
         <div className='App'>
           <header className='App-header'>
             <Nav component={Nav} />
@@ -44,8 +35,6 @@ function App() {
           <footer>
           </footer>
         </div>
-
-		</GameContext.Provider>
 	);
 }
 

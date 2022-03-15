@@ -1,0 +1,37 @@
+.slideshow-box {
+	/* z-index keeps the home page slideshow visible as the user scrolls. */
+	z-index: 2;
+	position: fixed;
+	bottom: 0.5em;
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	font-size: 50px;
+}
+
+.slideshow {
+	width: 300px;
+
+	display: flex;
+	flex-direction: row;
+	overflow: hidden;
+}
+
+.slideshow::-webkit-scrollbar {
+	display: none;
+}
+
+.slider {
+	display: flex;
+	flex-direction: row;
+	white-space: nowrap;
+	transition: ease 3000ms;
+}
+
+.slide {
+	align-self: center;
+	padding: 1em;
+	width: 300px;
+}

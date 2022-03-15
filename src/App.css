@@ -3,109 +3,70 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 .App {
-  z-index: -2;
-  height: 100vh;
-  width: 100vw;
-  display: grid;
-  grid-template: 10% 80% 10%/10% 80% 10%;
+	/* background-color: blanchedalmond; */
 }
 
 header {
-  grid-row: 1;
-  grid-column: 1 /span 3;
+	position: fixed;
+	z-index: 2;
+	top: 0;
+	padding: 1rem;
+	height: 15vh;
+	width: 100vw;
+	background-color: burlywood;
 
-  background: rgb(172, 236, 234);
-  padding: 1rem;
+	display: flex;
+	justify-content: space-around;
+	align-items: space-around;
 
-  display: flex;
-  justify-content: space-around;
-  align-items: space-around;
-
-  text-decoration: none;
-  font-weight: 400;
-
+	text-decoration: none;
+	font-size: 40px;
+	font-weight: 400;
 }
 
 main {
-  grid-row: 2/span 2;
-  grid-column: 2;
-  background: url('https://i.imgur.com/sNrBH3q.jpg');
-  background-size: cover;
-
-  display: flex;
-  flex-direction: column;
-  
-}
-
-menu {
-  grid-row: 1/span 3;
-  grid-column: 1;
-}
-
-aside {
-  grid-row: 1/span 3;
-  grid-column: 3;
-  
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  padding: 1rem;
-  
-  overflow: auto;
-  
-}
-
-footer {
-  grid-row: 3;
-  grid-column: 1/span 3;
+	margin-top: 15vh;
+	display: flex;
+	flex-direction: column;
 }
 
 button {
-  background: transparent;
+	background: transparent;
 }
 
-h1, h2, h3, h4, h5, h6, a {
-  font-family: 'Zen Kaku Gothic Antique', sans-serif;
-    color: rgb(22, 156, 174);
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+	font-family: 'Zen Kaku Gothic Antique', sans-serif;
+	color: rgb(22, 156, 174);
 }
 
 p {
-  font-family: 'Noto Sans', sans-serif;
-  font-weight: 400;
+	font-family: 'Noto Sans', sans-serif;
+	font-weight: 400;
 }
 
-
-
 .link {
-  text-decoration: none;
-  color: black;
+	text-decoration: none;
+	color: black;
 }
 
 .link:hover {
-  color: gray;
+	color: gray;
 }
 
 .headline {
-  grid-column: 1/span 3;
-  align-self: center;
-  justify-self: center;
+	grid-column: 1 / span 3;
+	align-self: center;
+	justify-self: center;
 }
 
 .pdf {
-  margin: 0 auto;
-  overflow: auto;
-  box-shadow: 1px 2px 3px black;
-}
-
-@media(min-width: 500px) {
-  main {
-    grid-row: 2;
-    grid-template-columns: 1fr 8fr 1fr;
-
-    background: url('https://i.imgur.com/kAajrl0.jpg');
-    background-size: cover;
-
-  }
+	margin: 0 auto;
+	overflow: auto;
+	box-shadow: 1px 2px 3px black;
 }

@@ -1,44 +1,57 @@
-
-.headline {
-    text-align: center;
-}
-
-.project-list {
-    display: flex;
-    flex-direction: column;
-    height: 80vh;
-
-    overflow: auto;
-}
-
-.project-list::-webkit-scrollbar {
-    display: none;
-}
-
-.project {
-    text-align: center;
-    margin: 2em 0;
-    background: rgba(255,255,255,0.6);
-    backdrop-filter: blur(2px);
-    height: fit-content;
-}
-
 .summary {
-    text-align: left;
+	text-align: left;
 }
 
 .title {
-    font-size: 1.5em;
+	font-size: 1.5em;
 }
 
-.screencap {
-    width: 80%;
+.project {
+	margin: 1em;
+	height: 75vh;
+
+	display: grid;
+	grid-template: 0.5fr 4fr/ 1fr 1fr;
+	font-size: 1.5em;
 }
 
+.project h3 {
+	grid-row: 1;
+	grid-column: 2;
+	font-size: 1.5em;
+}
+.project img {
+	grid-row: 2;
+	grid-column: 1;
+	width: 40vw;
+}
 
+.project-copy {
+	grid-row: 2;
+	grid-column: 2;
+}
 
-@media(min-width: 500px) {
-    .project-list {
-        grid-column: 2;
-    }
+.thumbnail-box {
+	position: fixed;
+	bottom: 0;
+	height: 8vh;
+	width: 100vw;
+	z-index: 1;
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	padding: 1em;
+}
+
+.thumbnail {
+	margin: 1em;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.thumbnail-image {
+	width: 150px;
 }

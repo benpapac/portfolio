@@ -48,7 +48,7 @@ const Thoughts = () => {
                 <h2>{thought.headline}</h2>
                 <h3 className='date'>{thought.date}</h3>
                 <p className="body">{thought.blurb}</p>
-                <a className='medium' href={thought.link}>read more</a>
+                <a className='medium' href={thought.link} rel="noreferrer" target="_blank">read more</a>
                 </div>
                 );
             })}
