@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
-import { GameContext } from '../../GameContext';
 
 const Nav = () => {
     return ( 

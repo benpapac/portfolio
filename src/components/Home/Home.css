@@ -1,88 +1,63 @@
-.intro-box {
-	margin: 0 auto;
-	display: flex;
-	overflow: auto;
+.background-img {
+	position: fixed;
+	left: 28vw;
+	width: 72vw;
 }
 
-.intro-box::-webkit-scrollbar {
-	display: none;
-}
-.name-box {
-	align-self: flex-start;
+.see-through {
 	height: 85vh;
-	width: 100%;
-	background-color: lightgoldenrodyellow;
-	align-items: end;
-	justify-content: end;
-
-	display: flex;
-	flex-direction: row;
-	text-align: left;
+	width: 100vw;
 }
+
 .home-name {
-	align-self: start;
-	justify-self: start;
-	font-size: 170px;
-}
-.name-box img {
-	grid-row: 1;
-	grid-column: 1;
-	max-height: 300px;
-	/* box-shadow: 10px 10px 0px red; */
-	border: solid 3px whitesmoke;
+	z-index: 2;
+	position: fixed;
+	/* left: 3em; */
+	bottom: 1.5em;
+	line-height: 0.8;
+	font-size: 120px;
 }
 
-.intro {
-	margin: 1em auto;
-	padding: 1em;
-	width: 60%;
-	line-height: 1.2;
+/* cool background name idea! Black in the back, transparent name. */
 
-	display: flex;
-	flex-direction: column;
-	overflow: hidden;
-}
-
-.intro h1 {
-	align-self: flex-start;
-	color: rgb(22, 156, 174);
-}
-
-.intro p {
-	color: black;
-	font-weight: 200;
-	font-size: 1.3em;
-	margin: 0 auto;
+.home-slides {
+	position: fixed;
+	z-index: 2;
+	bottom: 0.5em;
 }
 
 .home-blurb {
+	z-index: 1;
 	height: 85vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+	text-align: left;
+	background-color: blanchedalmond;
+}
+
+.home-blurb img {
+	width: 300px;
+}
+
+.home-blurb h1 {
+	margin: 1em auto;
+}
+
+.home-blurb p {
+	height: fit-content;
+	margin: 1em auto;
+	width: 500px;
+	font-size: x-large;
 }
 
 .home-link {
+	margin: 1em auto;
 	font-size: larger;
+	font-weight: 800;
 }
 
-.body {
-	padding: 1em;
-}
-
-.skills {
-	backdrop-filter: blur(2px);
-	margin-left: 2rem;
-	margin-bottom: 2rem;
-}
-
-.skills ul {
-	font-size: 2rem;
-	font-weight: 600;
-	color: rgb(122, 122, 174);
-}
-
-.skills li {
-	font-size: 1.5rem;
-	font-weight: 600;
-	color: black;
-	align-self: center;
-	margin-left: 4rem;
+.home-link:hover {
+	color: darkblue;
 }

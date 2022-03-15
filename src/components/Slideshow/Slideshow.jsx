@@ -7,7 +7,7 @@ const Slideshow = ({slideshow}) => {
     useEffect( () => {
         setTimeout(  (count) => {
                 setCount((count) => count === slideshow.length-1 ? 0 : count + 1);
-            }, 6000)
+            }, 4000)
         }, [count]);
 
     const copy = (slideshow) => {
@@ -22,35 +22,11 @@ return (
                 style={{transform: `translate3d(${-count*(100/slideshow.length)}%, 0, 0)`}}
             >
                 {slideshow.map(
-                    (slide, index) => {
-                    //    return <img className='slide'
-                    //             style={{
-                    //                 "align-self": "center",
-                    //             "boxShadow": `10px 6px ${slide['background']}`}}
-                    //             key={index} 
-                    //             src={`${slide.src}`} 
-                    //             alt={`${slide.alt}`} 
-                    //         />    
-                    return <p className='slide'>{slide}</p>
-                })}
+                    (slide, index) =>  <p className='slide'>{slide}</p>
+                    )}
             </div>
         </div>
         </section>
-        <div className="copy-box">
-            <div className="copy-slider" 
-                style={{transform: `translate3d(${-count*(100/slideshow.length)}%, 0, 0)`}}
-            >
-                {slideshow.map(
-                    (slide, index) => {
-                       return <p className='copy' key={index} >
-                                {slide.alt}
-                            </p>
-                        
-                })}
-         </div>
-
-            <p className='copy'>{copy(slideshow)}</p>
-    </div>
     </>
 )
 };

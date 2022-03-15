@@ -1,58 +1,28 @@
-import { useState, useEffect} from 'react';
+import { useContext, useEffect} from 'react';
+import { ProjectContext } from '../../Context';
 import "./ProjectSlides.css";
 
-const ProjectSlides = ({slideshow}) => {
-    const [count, setCount] = useState(0);
-
-    useEffect( () => {
-        setTimeout(  (count) => {
-                setCount((count) => count === slideshow.length-1 ? 0 : count + 1);
-            }, 6000)
-        }, [count]);
-
-    const copy = (slideshow) => {
-        return copy === slideshow.length -1 ? slideshow[0].alt : slideshow[count].alt;
-    }
+const ProjectSlides = () => {
+    const projectContext = useContext(ProjectContext);
+    const count = projectContext.count;
+    const slideshow = projectContext.projectSlides;
 
 return (
     <>
     <section className="project-slideshow-box" >
-     <div className='project-slideshow' >
+        <div className='project-slideshow' >
             <div className="project-slider" 
                 style={{transform: `translate3d(${-count*(100/slideshow.length)}%, 0, 0)`}}
             >
                 {slideshow.map(
-                    (slide, index) => {
-                    //    return <img className='slide'
-                    //             style={{
-                    //                 "align-self": "center",
-                    //             "boxShadow": `10px 6px ${slide['background']}`}}
-                    //             key={index} 
-                    //             src={`${slide.src}`} 
-                    //             alt={`${slide.alt}`} 
-                    //         />    
-                    return <div className='project-slide'>
+                    (slide, index) => {   
+                    return <div key={index} className='project-slide'>
                         {slide}
                         </div>
                 })}
             </div>
         </div>
-        </section>
-        {/* <div className="copy-box">
-            <div className="copy-slider" 
-                style={{transform: `translate3d(${-count*(100/slideshow.length)}%, 0, 0)`}}
-            >
-                {slideshow.map(
-                    (slide, index) => {
-                       return <p className='copy' key={index} >
-                                {slide.alt}
-                            </p>
-                        
-                })}
-         </div>
-
-            <p className='copy'>{copy(slideshow)}</p>
-    </div> */}
+    </section>
     </>
 )
 };
