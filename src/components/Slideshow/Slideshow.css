@@ -1,8 +1,7 @@
 .slideshow-box {
 	/* z-index keeps the home page slideshow visible as the user scrolls. */
 	z-index: 2;
-	position: fixed;
-	bottom: 0.5em;
+	height: fit-content;
 
 	display: flex;
 	flex-direction: row;
@@ -31,7 +30,11 @@
 }
 
 .slide {
-	align-self: center;
-	padding: 1em;
+	padding-left: 1em;
+	height: fit-content;
 	width: 300px;
+}
+
+.slide img {
+	width: 90%;
 }

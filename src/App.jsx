@@ -20,9 +20,9 @@ function App() {
                 <Home />
               </Route>
 
-              <Route exact path='/thoughts'>
+              {/* <Route exact path='/thoughts'>
                 <Thoughts component={Thoughts} />
-              </Route>
+              </Route> */}
               <Route exact path='/projects'>
                 <Projects component={Projects}/>
               </Route>

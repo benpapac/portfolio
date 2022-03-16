@@ -22,7 +22,7 @@ return (
                 style={{transform: `translate3d(${-count*(100/slideshow.length)}%, 0, 0)`}}
             >
                 {slideshow.map(
-                    (slide, index) =>  <p className='slide'>{slide}</p>
+                    (slide, index) =>  <div className='slide'>{slide}</div>
                     )}
             </div>
         </div>
