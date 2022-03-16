@@ -1,13 +1,13 @@
 .pdf {
-    margin: 5em auto;
-    max-height: 85vh;
+	margin: 5em auto;
+	max-height: 85vh;
 }
 
 .resume-link {
-    position: fixed;
-    top: 30vw;
-    left: 10vw;
+	position: fixed;
+	top: 30vw;
+	left: 5vw;
 
-    font-size: x-large;
-    font-weight: 500;
+	font-size: x-large;
+	font-weight: 500;
 }

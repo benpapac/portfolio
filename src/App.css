@@ -9,8 +9,8 @@
 header {
 	position: fixed;
 	z-index: 2;
+
 	top: 0;
-	padding: 1rem;
 	height: 15vh;
 	width: 100vw;
 	background-color: burlywood;
@@ -20,8 +20,8 @@ header {
 	align-items: space-around;
 
 	text-decoration: none;
-	font-size: 40px;
 	font-weight: 400;
+	font-size: 30px;
 }
 
 main {
@@ -59,14 +59,16 @@ p {
 	color: gray;
 }
 
-.headline {
-	grid-column: 1 / span 3;
-	align-self: center;
-	justify-self: center;
-}
 
 .pdf {
 	margin: 0 auto;
 	overflow: auto;
 	box-shadow: 1px 2px 3px black;
+}
+
+
+@media(min-width: 930px){
+	header {
+		font-size: 40px;
+	}
 }
