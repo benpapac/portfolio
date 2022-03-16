@@ -1,0 +1,92 @@
+.background-img {
+	position: fixed;
+	width: 100vw;
+}
+
+.see-through {
+	height: 30vh;
+	width: 100vw;
+}
+
+.home-name-box {
+	height: 55vh;
+	background: rgba(255, 255, 255, 0.7);
+}
+
+.home-name {
+	align-self: center;
+	line-height: 0.8;
+	font-size: 60px;
+}
+
+/* cool background name idea! Black in the back, transparent name. */
+
+.home-blurb {
+	z-index: 1;
+	height: fit-content;
+	width: 100vw;
+	padding: 0.4em;
+	align-items: start;
+	text-align: left;
+	background-color: blanchedalmond;
+}
+
+.home-blurb h1 {
+	font-size: 38px;
+	align-self: end;
+	margin-bottom: 1em;
+}
+.home-blurb p {
+	align-self: center;
+	height: fit-content;
+	width: 100%;
+	font-size: x-large;
+}
+
+.home-blurb-copy {
+	margin-top: 35vh;
+	height: 55vh;
+}
+
+.home-blurb-copy h2 {
+	font-size: 38px;
+}
+
+.home-link {
+	font-size: x-large;
+	font-weight: 800;
+	color: black;
+}
+
+.home-link:hover {
+	color: darkcyan;
+}
+
+.home-blurb-thumbnail {
+	display: none;
+}
+
+.home-blurb-thumbnail img {
+	margin-top: 10em;
+	border: solid black 2px;
+	width: 325px;
+	animation: fade 4.1s ease-in-out;
+}
+
+@keyframes fade {
+	from {
+		opacity: 0;
+	}
+
+	23% {
+		opacity: 1;
+	}
+
+	86% {
+		opacity: 1;
+	}
+
+	to {
+		opacity: 0;
+	}
+}

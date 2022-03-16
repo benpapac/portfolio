@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Slideshow from "../Slideshow/Slideshow";
 import projects from '../Projects/Projects.json';
+import './Home-Phone.css';
 import './Home.css';
 
 const Home = () => {

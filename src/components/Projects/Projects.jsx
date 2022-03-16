@@ -1,4 +1,5 @@
 import { useRef } from 'react';
+import './Projects-Phone.css';
 import './Projects.css';
 import projects from './Projects.json';
 

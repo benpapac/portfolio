@@ -1,77 +1,77 @@
-.summary {
-	text-align: left;
-}
+@media (min-width: 930px) {
+	.summary {
+		text-align: left;
+	}
 
-.title {
-	font-size: 1.5em;
-}
+	.title {
+		font-size: 1.5em;
+	}
 
-.projects-main {
-	background-color: blanchedalmond;
-}
-.project {
-	margin: 1em;
-	height: 75vh;
+	.projects-main {
+		background-color: blanchedalmond;
+	}
+	.project {
+		margin: 1em;
+		height: 75vh;
 
-	display: grid;
-	grid-template: 0.5fr 4fr/ 1fr 1fr;
-	font-size: 1.5em;
-}
+		display: grid;
+		grid-template: 0.5fr 4fr/ 1fr 1fr;
+		font-size: 1.5em;
+	}
 
-.project h3 {
-	grid-row: 1;
-	grid-column: 2;
-	font-size: 1.5em;
-}
-.project img {
-	grid-row: 2;
-	grid-column: 1;
-	width: 40vw;
-}
+	.project h3 {
+		grid-row: 1;
+		grid-column: 2;
+		font-size: 1.5em;
+	}
+	.project img {
+		grid-row: 2;
+		grid-column: 1;
+		width: 40vw;
+	}
 
-.project-copy {
-	grid-row: 2;
-	grid-column: 2;
-}
+	.project-copy {
+		grid-row: 2;
+		grid-column: 2;
+	}
 
-.project-link:hover{
-	color: darkgray;
-}
+	.project-link:hover {
+		color: darkgray;
+	}
 
-.thumbnail-box {
-	position: fixed;
-	bottom: 0;
-	height: 10vh;
-	width: 100vw;
-	z-index: 1;
-	background-color: rgba(255,255,255,0.5);
+	.thumbnail-box {
+		position: fixed;
+		bottom: 0;
+		height: 10vh;
+		width: 100vw;
+		z-index: 1;
+		background-color: rgba(255, 255, 255, 0.5);
 
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	padding: 2em;
-}
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		padding: 2em;
+	}
 
-.thumbnail {
-	margin: 01em 1em 0 1em;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-}
+	.thumbnail {
+		margin: 01em 1em 0 1em;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
 
-.thumbnail-image {
-	border: solid black 3px;
-	width: 150px;
-}
+	.thumbnail-image {
+		border: solid black 3px;
+		width: 150px;
+	}
 
-.thumbnail:hover {
-	transition: ease-in-out 300ms;
-	transform: scale(1.2);
-}
+	.thumbnail:hover {
+		transition: ease-in-out 300ms;
+		transform: scale(1.2);
+	}
 
-
-/* @keyframes expand {
+	/* @keyframes expand {
 	from {
 		transform: scale(1);
 	}
@@ -84,3 +84,4 @@
 		transform: scale(1);
 	}
 } */
+}

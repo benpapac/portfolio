@@ -1,4 +1,5 @@
 import { useState, useEffect} from 'react';
+import './Slideshow-Phone.css';
 import "./Slideshow.css";
 
 const Slideshow = ({slideshow}) => {
