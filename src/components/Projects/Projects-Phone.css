@@ -8,7 +8,8 @@
 
 .project {
 	margin: 1em;
-	height: 55vh;
+	height: fit-content;
+	min-height: 55vh;
 
 	display: flex;
 	flex-direction: column;

@@ -59,15 +59,13 @@ p {
 	color: gray;
 }
 
-
 .pdf {
 	margin: 0 auto;
 	overflow: auto;
 	box-shadow: 1px 2px 3px black;
 }
 
-
-@media(min-width: 930px){
+@media (min-width: 930px) {
 	header {
 		font-size: 40px;
 	}

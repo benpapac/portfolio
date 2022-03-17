@@ -11,7 +11,6 @@ const Home = () => {
     useEffect( () => {
         setTimeout(  () => {
                 if(toggler){
-                    console.log(index);
                     setIndex(index === projects.length-1 ? 0 : index + 1);
                 }
                 setToggler((toggler) => !toggler ? true : false);
@@ -52,13 +51,13 @@ const Home = () => {
             <div className="home-blurb">
                 {/* <img src="https://i.imgur.com/BxDTG47.jpg" alt="Ben holding a cat" /> */}
                 <h1>It's a pleasure to meet you.</h1>
-                <p>My name's Ben.<br/><br/> I’m a software engineer, trained in full-stack web development at General Assembly, and I tell stories online.<br/><br/> Human connection  is the driving force behind everything I do in life. <br/><br/>I produce compelling, beautiful, crystal-clear products that bring people together, and I help make complex ideas easy to engage with.</p>
+                <p>I’m a software engineer, trained in full-stack web development at General Assembly, and I tell stories online.<br/><br/> Human connection  is the driving force behind everything I do in life. <br/><br/>I produce compelling, beautiful, crystal-clear products that bring people together, and I help make complex ideas easy to engage with.</p>
             </div>
                 
             <div className="home-blurb" style={{backgroundColor: 'rgba(255,255,255, 0.7)'}}>
                 <div className="home-blurb-copy">
                 <h2>Projects</h2>
-                <p >I'm trained in Javascript (React, Express, Mongoose) and Python(Postgres), but my longterm passion is game dev! You'll see that in Onitama, or my new Chess App, along with my growing Front End skills.</p>
+                <p >I'm trained in Javascript <br/>(React, Express, Mongoose) <br/>and Python(Postgres), but my longterm passion is game dev! You'll see that in Onitama, or my new Chess App, along with my growing Front End skills.</p>
                 <Link className="home-link" to="/projects">Check them out here.</Link>
                 </div>
                     <div className="home-blurb-thumbnail">

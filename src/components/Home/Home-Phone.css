@@ -4,12 +4,14 @@
 }
 
 .see-through {
-	height: 30vh;
+	z-index: 1;
+	height: 32vh;
 	width: 100vw;
 }
 
 .home-name-box {
-	height: 55vh;
+	z-index: 1;
+	height: 53vh;
 	background: rgba(255, 255, 255, 0.7);
 }
 
@@ -24,28 +26,29 @@
 .home-blurb {
 	z-index: 1;
 	height: fit-content;
+	min-height: 65vh;
 	width: 100vw;
-	padding: 0.4em;
+	padding: 0.5em;
 	align-items: start;
 	text-align: left;
 	background-color: blanchedalmond;
 }
 
 .home-blurb h1 {
-	font-size: 38px;
+	font-size: 36px;
 	align-self: end;
-	margin-bottom: 1em;
+	margin-bottom: 0.5em;
 }
 .home-blurb p {
 	align-self: center;
 	height: fit-content;
-	width: 100%;
+	width: 95%;
 	font-size: x-large;
 }
 
 .home-blurb-copy {
-	margin-top: 35vh;
-	height: 55vh;
+	margin: 30vh 0 20vh 0;
+	height: fit-content;
 }
 
 .home-blurb-copy h2 {
