@@ -14,9 +14,9 @@ const Projects = () => {
     const projectSlides = projects.map(project => {
                 return (
                     <div id={project.title} ref={refs[`${projects.indexOf(project)}`]} className="project">
-                        <h3 className="title">{project.title}</h3>
                         <img className="screencap" src={project.image} alt={project.alts.image}/>
                         <div className='project-copy'>
+                        <h3 className="title">{project.title}</h3>
                             <p className="summary">{project.summary}</p>
                             <a href={project.link} alt={project.alts.link} className='project-link' rel="noreferrer" target="_blank">
                                 See the project here
@@ -32,7 +32,7 @@ const Projects = () => {
     const  handleClick = (e) => {
         refs[e.target.id].current.scrollIntoView({
             behavior: 'smooth',
-            block: 'end',
+            block: 'center',
         });
     }
 
