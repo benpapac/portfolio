@@ -6,6 +6,7 @@ import Home from './components/Home/Home';
 import Thoughts from './components/Thoughts/Thoughts.jsx';
 import Projects from './components/Projects/Projects.jsx';
 import Resume from './components/Resume/Resume';
+import Contact from './components/Contact/emailJS';
 
 
 function App() {
@@ -29,6 +30,10 @@ function App() {
 
               <Route exact path='/resume'>
                 <Resume component={Resume}/>
+              </Route>
+
+              <Route exact path='/contact'>
+                <Resume component={Contact}/>
               </Route>
             
           </main>
