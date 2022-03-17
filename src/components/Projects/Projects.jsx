@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import './Projects-Phone.css';
 import './Projects.css';
 import projects from './Projects.json';
@@ -10,6 +10,12 @@ const Projects = () => {
         2: useRef(null),
         3: useRef(null)        
     }
+
+    useEffect ( () => {
+        refs[0].current.scrollIntoView({
+            block: 'center',
+        });
+    }, []);
         
     const projectSlides = projects.map(project => {
                 return (
