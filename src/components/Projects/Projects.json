@@ -4,6 +4,7 @@
             "image": "https://i.imgur.com/ZUyQtvs.png",
             "link": "https://benpapac.github.io/Onitama/",
             "repo": "https://github.com/benpapac/Onitama",
+            "highlights": "Javascript, HTML, and CSS",
             "summary": "Welcome to Onitama! Published by Arcane Wonders in 2014, and designed by Shimpei Sato, Onitama is a delightful strategy game loosely related to Chess. Players move their pawns using cards that they pass back and forth as they play. Once someone captures their opponent's sage, or moves their own sage to their opponent's temple, they win!",
              "alts": {
                 "image": "legal squares glow around a pawn on a wooden board",
@@ -17,6 +18,7 @@
             "image": "https://i.imgur.com/OxXoSke.png",
             "link": "https://relaxed-minsky-fd29c3.netlify.app/",
             "repo": "https://github.com/benpapac/TGIPH",
+            "highlights": "React, API-leveraging",
             "summary": "Thank God I'm Post-Human, is the story of one bot's quest to seek revenge on the humans that made it. As the player lands on the site, they're led to believe that they're signing into a gif search app powered by Giphy. Little do they know, that buried in the submit button on the sign-in form is a cunning piece of malware...",
             "alts": {
                 "image": "The landing page features a scrollable field of gifts.",
@@ -30,6 +32,7 @@
             "image": "https://i.imgur.com/lJUyLLs.png",
             "link": "happy-shannon-d1fdea.netlify.app/",
             "repo": "https://github.com/SEIR-809-Project3-SquadCarlos",
+            "highlights": "React, CRUD, Mongo DB",
             "summary": "Tou:Ring is a simple application designed for exploring and sharing attractions in any city around the world. Leveraging a streamlined, flexible API, Tou:Ring could easily be expanded into a robust social network, allowing 'Rings' of friends to compare their favorite spots and plan group outings.",
             "alts": {
                 "image": "The landing page for touring",
@@ -43,6 +46,7 @@
             "image": "https://i.imgur.com/98XcNS4.png",
             "link": "https://wandr.netlify.app/",
             "repo": "https://github.com/MusicPassport",
+            "highlights": "React, CRUD, Python and Postgres",
             "summary": "Wander is an app for those born to move. Whatever you're seeking, wherever you happen to be, Wander is a tool to connect you to your favorite experiences, and journal your memories along the way.",
             "alts": {
                 "image": "the dashboard shows a timeline, and links to other features",

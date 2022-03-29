@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import './Projects-Phone.css';
 import './Projects.css';
 import projects from './Projects.json';
@@ -11,6 +11,8 @@ const Projects = () => {
         3: useRef(null)        
     }
 
+    const [align, setAlign] = useState('left');
+
     useEffect ( () => {
         refs[0].current.scrollIntoView({
             block: 'center',
@@ -19,8 +21,9 @@ const Projects = () => {
         
     const projectSlides = projects.map(project => {
                 return (
-                    <div id={project.title} ref={refs[`${projects.indexOf(project)}`]} className="project">
+                    <div id={project.title} ref={refs[`${projects.indexOf(project)}`]} className={`project ${align}`}>
                         <img className="screencap" src={project.image} alt={project.alts.image}/>
+                        <p>{project.highlights}</p>
                         <div className='project-copy'>
                         <h3 className="title">{project.title}</h3>
                             <p className="summary">{project.summary}</p>
@@ -43,11 +46,19 @@ const Projects = () => {
     }
 
     const thumbnails = projects.map((project, index) => {
+        setAlign(index % 2 ? 'left' : 'right' );
+
         return (
+            // github octocat icon for repo, 
+            // open new tab icon for website link
+            //alternate image to text  left/right alignment in layout.
+            //most impressive to least impressive in organization.
+            //include at least one group project.
+            //caption under each image, key techs/ideas.
             <>
-            <div key={index} id={index} className='thumbnail' onClick={handleClick}>
-                <img id={index} className='thumbnail-image' src={project.image} alt={project.alts.image} />
-                <p id={index} >{project.title}</p>
+            <div key={index} id={index} className={`thumbnail`} onClick={handleClick}>
+                <img className='thumbnail-image' src={project.image} alt={project.alts.image} />
+                <h4>{project.title}</h4>
             </div>
             </>
         )

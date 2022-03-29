@@ -15,17 +15,36 @@
 		font-size: 1.5em;
 	}
 
+	.left {
+		align-items: start;
+		justify-content: start;
+	}
+
+	.right {
+		align-items: end;
+		justify-content: end;
+	}
+
 	.project h3 {
 		align-self: start;
 		justify-self: start;
 		font-size: 1.5em;
 	}
-	.project img {
+	.left img {
 		grid-column: 1;
 		width: 40vw;
 	}
 
-	.project-copy {
+	.right img {
+		grid-column: 3;
+		width: 40vw;
+	}
+
+	.left > .project-copy {
+		grid-column: 2;
+	}
+
+	.right > .project-copy {
 		grid-column: 2;
 	}
 
