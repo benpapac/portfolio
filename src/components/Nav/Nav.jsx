@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import resume from '../../assets/_Ben Papac Dev Resume.pdf';
 
 const Nav = () => {
     return ( 
@@ -10,9 +11,17 @@ const Nav = () => {
         <Link className='link' to="/">Home</Link>
         
         {/* <Link className='link' to="/thoughts">Thoughts</Link> */}
-        <Link className='link' to="/projects">Projects</Link>
+        <Link className='link' to="/projects">
+            Projects
+        </Link>
         {/* <Link className="link" to="../../assets/_Ben Papac Dev Resume.pdf">Resume</Link> */}
-        <a href='../../assets/_Ben Papac Dev Resume.pdf' alt='resume'>Resume</a>
+        <a href={resume} 
+            target='_blank' 
+            rel='noreferrer noopener'
+            alt='resume'
+        >
+            Resume
+        </a>
        </>
     );
 };
