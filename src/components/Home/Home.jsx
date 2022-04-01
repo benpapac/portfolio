@@ -48,14 +48,13 @@ const Home = () => {
 
             <div className="home-blurb">
                 <h1>It's a pleasure to meet you.</h1>
-                <p>I use the power of storytelling and the web to help bring people together.</p>
-                <div className="home-blurb-copy">
-                    <h2>Projects</h2>
-                    <Link className="home-link" to="/projects"><button>Check out what I've built.</button></Link>
-                </div>
+                <p>I use the power of <span>storytelling</span> to help bring people together.</p>
                 <div className="home-blurb-thumbnail">
                     <img src={projects[index].image} alt={projects[index].alts.image}/>
                     <p>{projects[index].title}</p>
+                    <Link className="home-link" to="/projects">
+                        Check out what I've built
+                    </Link>
                 </div>
             </div>
         </>

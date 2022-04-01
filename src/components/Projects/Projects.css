@@ -21,31 +21,59 @@
 	}
 
 	.right {
-		align-items: end;
+		align-items: start;
 		justify-content: end;
 	}
 
 	.project h3 {
 		align-self: start;
 		justify-self: start;
+		margin: 0;
 		font-size: 1.5em;
 	}
+
 	.left img {
+		grid-row: 1;
 		grid-column: 1;
 		width: 40vw;
 	}
 
+	.left > .highlights {
+		grid-row: 1;
+		grid-column: 1;
+		margin-top: 5em;
+		align-self: center;
+	}
+	
+	.left > .project-copy {
+		grid-row: 1;
+		grid-column: 2/span 2;
+		margin: 0 1em;
+	}
+
 	.right img {
+		grid-row: 1;
 		grid-column: 3;
 		width: 40vw;
 	}
 
-	.left > .project-copy {
-		grid-column: 2;
+	.right > .highlights {
+		grid-row: 1;
+		grid-column: 3;
+		margin-top: 5em;
+		align-self: center;
 	}
 
 	.right > .project-copy {
-		grid-column: 2;
+		grid-row: 1;
+		grid-column: 1/span 2;
+		margin: 0 1em;
+	}
+
+	.links-box {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
 	}
 
 	.project-link:hover {

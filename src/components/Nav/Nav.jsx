@@ -11,7 +11,8 @@ const Nav = () => {
         
         {/* <Link className='link' to="/thoughts">Thoughts</Link> */}
         <Link className='link' to="/projects">Projects</Link>
-        <Link className="link" to="../../assets/_Ben Papac Dev Resume.pdf">Resume</Link>
+        {/* <Link className="link" to="../../assets/_Ben Papac Dev Resume.pdf">Resume</Link> */}
+        <a href='../../assets/_Ben Papac Dev Resume.pdf' alt='resume'>Resume</a>
        </>
     );
 };

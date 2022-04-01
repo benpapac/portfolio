@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
 @media (min-width: 930px) {
 	.background-img {
 		position: fixed;
@@ -41,6 +43,8 @@
 
 	.home-blurb h1 {
 		font-size: 48px;
+		font-family: 'Parisienne', cursive;
+
 		grid-row: 1;
 		align-self: start;
 		grid-column: 2 / span 2;
@@ -48,35 +52,32 @@
 	}
 	.home-blurb p {
 		grid-row: 1;
-		grid-column: 2 / span 2;
+		grid-column: 2;
+		
 		align-self: center;
 		height: fit-content;
 		width: 90%;
 		font-size: x-large;
 	}
 
-	.home-blurb-copy {
-		grid-row: 1;
-		grid-column: 2;
-		margin-top: 0;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		text-align: left;
-	}
-
-	.home-blurb-copy h2 {
-		font-size: 38px;
+	.home-blurb span {
+		font-weight: 800;
+		color: darkcyan;
 	}
 
 	.home-link {
-		font-size: x-large;
+		padding: 0.3em;
+		font-size: 20px;
 		font-weight: 800;
+		border: solid black 2px;
+		border-radius: 33em;
 		color: black;
+		text-decoration: none;
 	}
 
 	.home-link:hover {
+		border: solid darkcyan 2px;
+
 		color: darkcyan;
 	}
 
@@ -90,7 +91,7 @@
 		align-items: center;
 		justify-content: start;
 		text-align: center;
-		background: rgba(0, 0, 0, 0.1);
+		/* background: rgba(0, 0, 0, 0.1); */
 		animation: fade 4.1s ease-in-out;
 	}
 
