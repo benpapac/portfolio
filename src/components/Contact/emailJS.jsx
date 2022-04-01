@@ -31,7 +31,6 @@ import './Contact.css';
 				(error) => {
 					console.log(error.text);
 					setSent('fail')
-
 				}
 			);
 
@@ -40,34 +39,33 @@ import './Contact.css';
 
 	return (
 		<div className='contact'>
-		<h2>Contact</h2>
-		{sent === 'pass' ? 
-		<>
-		<h4>Your message was successfully sent!</h4> 
-		</>
-		: ( sent === 'fail' ?
-			<>
-			<h4>Oops! Something went wrong. Refresh the page, and try again.</h4>
-			</>
-			: 
-			<>
-			<form className='contact-form' ref={form} onSubmit={sendEmail}>
-				<label>Name</label>
-				<input type="hidden" name='to_name' value="Ben"/>
-				<input className='input' type='text' placeholder='Name' name='name' />
-				<label>Email</label>
-				<input className='input' type='email' placeholder='Email Address' name='email' />
-				<label >Subject</label>
-				<input className='input' type="text" placeholder='Subject' name='subject'/>
-				<label>Message</label>
-				<textarea className='message' name='message' />
-				<input className='button' type='submit' value='Send' />
-			</form>
-			</>
-		)
-		}
+			<h2>Contact</h2>
+			{ () => {
+				switch (sent) {
+					case 'pass':
+						return <h4>Your message was successfully sent!</h4>;
+					case 'fail':
+						return <h4>Oops! Something went wrong. Refresh the page, and try again.</h4>;
+				
+					default:
+						return (
+							<form className='contact-form' ref={form} onSubmit={sendEmail}>
+								<label>Name</label>
+								<input type="hidden" name='to_name' value="Ben"/>
+								<input className='input' type='text' placeholder='Name' name='name' />
+								<label>Email</label>
+								<input className='input' type='email' placeholder='Email Address' name='email' />
+								<label >Subject</label>
+								<input className='input' type="text" placeholder='Subject' name='subject'/>
+								<label>Message</label>
+								<textarea className='message' name='message' />
+								<input className='button' type='submit' value='Send' />
+							</form>
+						);
+				}}
+			}
 		</div>
-	);
-};
+	)
+}
 
 export default Contact;

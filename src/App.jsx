@@ -1,5 +1,6 @@
 import './App.css';
 import { Route } from 'react-router';
+import { createRef } from 'react';
 
 import Nav from './components/Nav/Nav';
 import Home from './components/Home/Home';
@@ -10,6 +11,14 @@ import Contact from './components/Contact/emailJS';
 
 
 function App() {
+
+
+  const mainRef = createRef(null);
+  const handleScroll = (e) => {
+    console.log(e);
+    console.log('hello');
+  }
+
   return (
         <div className='App'>
           <header className='App-header'>

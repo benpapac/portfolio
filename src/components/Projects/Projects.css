@@ -15,22 +15,72 @@
 		font-size: 1.5em;
 	}
 
+	.left {
+		align-items: start;
+		justify-content: start;
+	}
+
+	.right {
+		align-items: start;
+		justify-content: end;
+	}
+
 	.project h3 {
 		align-self: start;
 		justify-self: start;
+		margin: 0;
 		font-size: 1.5em;
 	}
-	.project img {
+
+	.left img {
+		border: solid white 2px;
+		grid-row: 1;
 		grid-column: 1;
 		width: 40vw;
 	}
 
-	.project-copy {
-		grid-column: 2;
+	.left > .highlights {
+		grid-row: 1;
+		grid-column: 1;
+		margin-top: 5em;
+		align-self: center;
+	}
+
+	.left > .project-copy {
+		grid-row: 1;
+		grid-column: 2 / span 2;
+		margin: 0 1em;
+	}
+
+	.right img {
+		border: solid white 2px;
+		grid-row: 1;
+		grid-column: 3;
+		width: 40vw;
+	}
+
+	.right > .highlights {
+		grid-row: 1;
+		grid-column: 3;
+		margin-top: 5em;
+		align-self: center;
+	}
+
+	.right > .project-copy {
+		grid-row: 1;
+		grid-column: 1 / span 2;
+		margin: 0 1em;
+	}
+
+	.links-box {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
 	}
 
 	.project-link:hover {
-		color: darkgray;
+		transition: ease-in-out 300ms;
+		transform: scale(1.2);
 	}
 
 	.thumbnail-box {
@@ -39,7 +89,7 @@
 		height: 10vh;
 		width: 100vw;
 		z-index: 1;
-		background-color: rgba(255, 255, 255, 0.5);
+		background-color: rgba(255, 255, 255, 1);
 
 		display: flex;
 		flex-direction: row;
@@ -58,6 +108,10 @@
 	.thumbnail-image {
 		border: solid black 3px;
 		width: 150px;
+	}
+
+	.thumbnail-title {
+		margin-top: 0.2em;
 	}
 
 	.thumbnail:hover {
