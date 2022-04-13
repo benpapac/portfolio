@@ -7,11 +7,34 @@ import './Home.css';
 
 const Home = () => {
     const [index, setIndex] = useState(0);
+    const [charIndex, setCharIndex] = useState(0);
+    const [text, setText] = useState('');
+    const [underscore, setUnderscore] = useState('');
+    const greeting = 'It\'s a pleasure to meet you.'
     useEffect( () => {
+
+        setTimeout( () => {
+            setCharIndex(
+                charIndex === greeting.length ? 
+                charIndex
+                : charIndex+1 
+             );
+             setText(
+                charIndex >= greeting.length ?
+                    greeting
+                    : text.concat(greeting[charIndex])
+            );
+         }, 150);
+
+        //  setTimeout( () => {
+        //       if(text === greeting ){
+        //          setUnderscore(underscore ? '' : '_')
+        //          };
+        //  }, 150);
         setTimeout(  () => {
             setIndex(index === projects.length-1 ? 0 : index + 1);
             }, 4000)
-        }, [index]);
+        }, [index, text]);
 
     const slideshow = [
         <p>React</p>,
@@ -47,7 +70,7 @@ const Home = () => {
             </div>
 
             <div className="home-blurb">
-                <h1>It's a pleasure to meet you.</h1>
+                <h1>{text}{underscore}</h1>
                 <p>I use the power of <span>storytelling</span> to help bring people together.</p>
                 <div className="home-blurb-thumbnail">
                     <img src={projects[index].image} alt={projects[index].alts.image}/>

@@ -23,7 +23,7 @@ const Projects = () => {
                         <img className="screencap" src={project.image} alt={project.alts.image}/>
                         <p className='highlights'>{project.highlights}</p>
                         <div className='project-copy'>
-                        <h3 className="title">{project.title}</h3>
+                        <h3 className="project-title">{project.title}</h3>
                             <p className="summary">{project.summary}</p>
                             <div className='links-box'>
                             <a href={project.link} alt={project.alts.link}  rel="noreferrer" target="_blank">
