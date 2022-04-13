@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;1,300&display=swap');
+
 @media (min-width: 930px) {
 	.summary {
 		text-align: left;
@@ -13,6 +15,11 @@
 		display: grid;
 		grid-template: 3fr/ 1fr 1fr;
 		font-size: 1.5em;
+	}
+
+	.project-title {
+		font-family: 'Source Code Pro',
+		monospace;
 	}
 
 	.left {
@@ -75,12 +82,15 @@
 	.links-box {
 		display: flex;
 		flex-direction: row;
-		justify-content: space-evenly;
+		justify-content:center;
+	}
+	.project-link {
+		margin: 0 1em 0 1em;
 	}
 
 	.project-link:hover {
-		transition: ease-in-out 300ms;
-		transform: scale(1.2);
+		transition: ease-in-out 250ms;
+		transform: scale(1.25);
 	}
 
 	.thumbnail-box {
@@ -89,7 +99,7 @@
 		height: 10vh;
 		width: 100vw;
 		z-index: 1;
-		background-color: rgba(255, 255, 255, 1);
+		/* background-color: rgba(255, 255, 255, 1); */
 
 		display: flex;
 		flex-direction: row;

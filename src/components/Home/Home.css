@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;1,300&display=swap');
 
 @media (min-width: 930px) {
 	.background-img {
@@ -24,6 +24,7 @@
 		align-self: center;
 		line-height: 0.8;
 		font-size: 120px;
+		color: #006B6B;
 	}
 
 	/* cool background name idea! Black in the back, transparent name. */
@@ -38,16 +39,16 @@
 		grid-template-columns: 1fr 1fr 1fr;
 		align-items: start;
 		text-align: left;
-		background-color: rgba(255, 235, 205, 0.7);
+		background-color: #ffebcdb3;
 	}
 
 	.home-blurb h1 {
 		font-size: 48px;
-		font-family: 'Parisienne', cursive;
+		font-family: 'Source Code Pro', monospace;
 
 		grid-row: 1;
 		align-self: start;
-		grid-column: 2 / span 2;
+		grid-column: 2 ;
 		margin-bottom: 1em;
 	}
 	.home-blurb p {
@@ -56,13 +57,16 @@
 
 		align-self: center;
 		height: fit-content;
-		width: 90%;
-		font-size: x-large;
+		width: 100%;
+		font-size: 30px;
+		font-weight: 200;
 	}
 
 	.home-blurb span {
-		font-weight: 800;
-		color: darkcyan;
+		font-weight: 900;
+		font-family: 'Source Code Pro',
+		monospace;
+		color: #006B6B;
 	}
 
 	.home-link {
@@ -76,9 +80,9 @@
 	}
 
 	.home-link:hover {
-		border: solid darkcyan 2px;
+		border: solid #006B6B 2px;
 
-		color: darkcyan;
+		color: #006B6B;
 	}
 
 	.home-blurb-thumbnail {
