@@ -1,0 +1,20 @@
+.Nav {
+    z-index: 2;
+    width: 100vw;
+	background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-around;
+}
+
+.link {
+    z-index: 3;
+    padding: 5vh;
+    text-decoration: none;
+    font-weight: 400;
+    color: whitesmoke;
+}
+
+.link:hover {
+    color: #006B6B;
+    ;
+}

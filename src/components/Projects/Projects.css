@@ -6,68 +6,83 @@
 	}
 
 	.projects-main {
-		background-color: blanchedalmond;
+		margin-top: -30vh;
 	}
-	.project {
-		margin: 1em;
-		height: 75vh;
 
-		display: grid;
-		grid-template: 3fr/ 1fr 1fr;
+	.project {
+		margin: 0;
+		height: fit-content;		
 		font-size: 1.5em;
+
+			background-size: cover;
+				background-attachment: fixed;
+				background-position: center;
+				background-repeat: no-repeat;
+	}
+
+	.project-content {
+		padding: 10vh;
+		height: 80vh;
+		background-color: rgba(255, 235, 205,0.7);
+		display: grid;
+		grid-template: 1fr/ 1fr 1fr;
+	}
+
+	.empty {
+		height: 100vh;
+		width: 100vw;
 	}
 
 	.project-title {
+		font-size: 80px;
 		font-family: 'Source Code Pro',
 		monospace;
+
+		align-self: start;
+			justify-self: start;
+			margin: 0;
+	}
+
+	.project-screencap {
+		width: 100%;
+		border: solid white 2px;
 	}
 
 	.left {
-		align-items: start;
+		align-items: center;
 		justify-content: start;
 	}
 
 	.right {
-		align-items: start;
+		align-items: center;
 		justify-content: end;
 	}
 
-	.project h3 {
-		align-self: start;
-		justify-self: start;
-		margin: 0;
-		font-size: 1.5em;
-	}
-
-	.left img {
-		border: solid white 2px;
-		grid-row: 1;
-		grid-column: 1;
-		width: 40vw;
+	.left > .project-screencap-box {
+			grid-row: 1;
+			grid-column: 1;
 	}
 
 	.left > .highlights {
 		grid-row: 1;
 		grid-column: 1;
 		margin-top: 5em;
-		align-self: center;
+		align-self: end;
 	}
 
 	.left > .project-copy {
 		grid-row: 1;
-		grid-column: 2 / span 2;
+		grid-column: 2;
 		margin: 0 1em;
 	}
 
-	.right img {
-		border: solid white 2px;
+	.right > .project-screencap-box {
 		grid-row: 1;
-		grid-column: 3;
-		width: 40vw;
+		grid-column: 2;
 	}
 
 	.right > .highlights {
-		grid-row: 1;
+		grid-row:2;
 		grid-column: 3;
 		margin-top: 5em;
 		align-self: center;
@@ -75,7 +90,7 @@
 
 	.right > .project-copy {
 		grid-row: 1;
-		grid-column: 1 / span 2;
+		grid-column: 1;
 		margin: 0 1em;
 	}
 
@@ -86,6 +101,11 @@
 	}
 	.project-link {
 		margin: 0 1em 0 1em;
+	}
+
+	.project-screencap-box {
+		display: flex;
+		flex-direction: column;
 	}
 
 	.project-link:hover {

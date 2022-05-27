@@ -58,11 +58,11 @@ const Home = () => {
     })
 
     return (
-        <>
+        <section className="home-bg">
 
         {/* Cut intro copy to one sentence. remove Projects copy. Only two panels, translucent. Button instead of link, simpler copy there. Add an accent font.  */}
-            <img  className='background-img' src="https://i.imgur.com/kAajrl0.jpg" alt="Ben holding a cat" />
-            <div className="see-through" > </div>
+            {/* <img  className='background-img' src="https://i.imgur.com/kAajrl0.jpg" alt="Ben holding a cat" /> */}
+            <div className="see-through"/> 
 
             <div className="home-name-box">
                 <h1 className="home-name">Ben <br/>Papac</h1>
@@ -80,7 +80,7 @@ const Home = () => {
                     </Link>
                 </div>
             </div>
-        </>
+        </section>
     );
 };
 
