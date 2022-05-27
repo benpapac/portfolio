@@ -18,11 +18,11 @@
 	justify-content: center;
 }
 
-.project h3 {
+.project-title {
 	font-size: 1.5em;
 }
 
-.project img {
+.project-screencap {
 	width: 80vw;
 }
 

@@ -1,6 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;1,300&display=swap');
 
 @media (min-width: 930px) {
+
+	.home-bg {
+
+		margin-top: -30vh;
+		background-image: url('../../assets/Josie_Elle_4.jpg');
+		background-position: center;
+		background-attachment: fixed;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
 	.background-img {
 		position: fixed;
 		left: 28vw;
@@ -8,7 +18,7 @@
 	}
 
 	.see-through {
-		height: 85vh;
+		height: 100vh;
 		width: 100vw;
 	}
 
@@ -31,7 +41,7 @@
 
 	.home-blurb {
 		z-index: 1;
-		height: 85vh;
+		height: 100vh;
 		width: 100vw;
 		display: grid;
 		flex-direction: column;

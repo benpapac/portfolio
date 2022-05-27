@@ -7,13 +7,9 @@
 }
 
 header {
-	position: fixed;
 	z-index: 2;
-
-	top: 0;
 	height: 15vh;
 	width: 100vw;
-	background-color: burlywood;
 
 	display: flex;
 	justify-content: space-around;
@@ -50,15 +46,7 @@ p {
 	font-weight: 400;
 }
 
-.link {
-	text-decoration: none;
-	font-weight: 400;
-	color: black;
-}
 
-.link:hover {
-	color: #006B6B;;
-}
 
 .pdf {
 	margin: 0 auto;
