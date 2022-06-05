@@ -18,12 +18,14 @@
 				background-attachment: fixed;
 				background-position: center;
 				background-repeat: no-repeat;
+
+		/* color: whitesmoke; */
 	}
 
 	.project-content {
 		padding: 10vh;
 		height: 80vh;
-		background-color: rgba(255, 235, 205,0.7);
+		background-color: rgba(255, 255, 255,0.7);
 		display: grid;
 		grid-template: 1fr/ 1fr 1fr;
 	}
@@ -38,6 +40,9 @@
 		font-family: 'Source Code Pro',
 		monospace;
 
+		color: #2bbdbd;
+		color: #006B6B;
+
 		align-self: start;
 			justify-self: start;
 			margin: 0;
@@ -45,7 +50,7 @@
 
 	.project-screencap {
 		width: 100%;
-		border: solid white 2px;
+		border: solid black 2px;
 	}
 
 	.left {
