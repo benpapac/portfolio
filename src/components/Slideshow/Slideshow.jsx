@@ -20,7 +20,7 @@ return (
     <section className="slideshow-box" >
      <div className='slideshow' >
             <div className="slider" 
-                style={{transform: `translate3d(${-count*(100/slideshow.length)}%, 0, 0)`}}
+                style={{transform: `translate3d(0, ${-count*100}%, 0)`}}
             >
                 {slideshow.map(
                     (slide, index) =>  <div className='slide'>{slide}</div>

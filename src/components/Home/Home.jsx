@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Slideshow from "../Slideshow/Slideshow";
 import projects from '../Projects/Projects.json';
-import './Home-Phone.css';
+// import './Home-Phone.css';
 import './Home.css';
 
 const Home = () => {
@@ -10,7 +10,7 @@ const Home = () => {
     const [charIndex, setCharIndex] = useState(0);
     const [text, setText] = useState('');
     const [underscore, setUnderscore] = useState('');
-    const greeting = 'It\'s a pleasure to meet you.'
+    const greeting = 'Nice to meet you.'
     useEffect( () => {
 
         setTimeout( () => {
@@ -64,22 +64,23 @@ const Home = () => {
             {/* <img  className='background-img' src="https://i.imgur.com/kAajrl0.jpg" alt="Ben holding a cat" /> */}
             <div className="see-through"/> 
 
-            <div className="home-name-box">
-                <h1 className="home-name">Ben <br/>Papac</h1>
-                <Slideshow className="home-slides" slideshow={slideshow} />
+            <div className="home-greeting-box">
+                <h1 className="home-greeting">{text}{underscore}</h1>
             </div>
 
-            <div className="home-blurb">
-                <h1>{text}{underscore}</h1>
-                <p>I use the power of <span>storytelling</span> to help bring people together.</p>
-                <div className="home-blurb-thumbnail">
+
+            <section className="home-content-box">
+                <div className="home-blurb">
+                    <p>I use the power of <span>storytelling</span> to help bring people together.</p>
+                </div>
+                <div className="home-thumbnail">
                     <img src={projects[index].image} alt={projects[index].alts.image}/>
-                    <p>{projects[index].title}</p>
+                    <h4>{projects[index].title}</h4>
+                </div>
                     <Link className="home-link" to="/projects">
                         Check out what I've built
                     </Link>
-                </div>
-            </div>
+            </section>
         </section>
     );
 };
