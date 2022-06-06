@@ -11,7 +11,8 @@
 
 	.project {
 		margin: 0;
-		height: fit-content;		
+		height: fit-content;
+		font-family: 'Source Code Pro', monospace;	
 		font-size: 1.5em;
 
 			background-size: cover;
@@ -37,8 +38,9 @@
 
 	.project-title {
 		font-size: 80px;
-		font-family: 'Source Code Pro',
-		monospace;
+		font-weight: 300;
+		font-family: 'Courier Prime',
+		sans-serif;
 
 		color: #2bbdbd;
 		color: #006B6B;
