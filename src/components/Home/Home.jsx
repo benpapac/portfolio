@@ -62,7 +62,6 @@ const Home = () => {
 
         {/* Cut intro copy to one sentence. remove Projects copy. Only two panels, translucent. Button instead of link, simpler copy there. Add an accent font.  */}
             {/* <img  className='background-img' src="https://i.imgur.com/kAajrl0.jpg" alt="Ben holding a cat" /> */}
-            <div className="see-through"/> 
 
             <div className="home-greeting-box">
                 <h1 className="home-greeting">{text}{underscore}</h1>
@@ -72,14 +71,14 @@ const Home = () => {
             <section className="home-content-box">
                 <div className="home-blurb">
                     <p>I use the power of <span>storytelling</span> to help bring people together.</p>
+                    <Link className="home-link" to="/projects">
+                        Check out what I've built
+                    </Link>
                 </div>
                 <div className="home-thumbnail">
                     <img src={projects[index].image} alt={projects[index].alts.image}/>
                     <h4>{projects[index].title}</h4>
                 </div>
-                    <Link className="home-link" to="/projects">
-                        Check out what I've built
-                    </Link>
             </section>
         </section>
     );

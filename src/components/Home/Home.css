@@ -17,26 +17,25 @@
 		width: 72vw;
 	}
 
-	.see-through {
-		height: 100vh;
-		width: 100vw;
-	}
 
 	.home-greeting-box {
-		z-index: 2;
-		position: fixed;
-		height: fit-content;
-		bottom: 1.5em;
-		left: 3vw;
-		background: none;
+		height: 100vh;
+		width: 100vw;
+		background: rgba(0, 0, 0, 0.5);
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 
 	.home-greeting {
-		align-self: center;
+		margin: 0 auto;
+		margin-top: 50vh;
 		line-height: 0.8;
 		font-size: 70px;
-		color: #006B6B;
+		font-weight: 700;
+		color: #018a8a;
 		color: #2bbdbd;
+		font-family: 'Courier Prime', sans-serif;
 	}
 
 	/* cool background name idea! Black in the back, transparent name. */
@@ -49,9 +48,9 @@
 			display: grid;
 		
 			grid-template-columns: 1fr 1fr 1fr;
-			align-items: start;
+			align-items: center;
 			text-align: left;
-			background-color: rgba(0, 0, 0, 0.7);
+			background-color: rgba(245, 245, 245, 0.2);
 	}
 	.home-blurb  {
 		grid-row: 1;
@@ -59,43 +58,47 @@
 		align-self: center;
 
 		margin-left: 5vw;
+		margin-bottom: 0;
 		height: fit-content;
 		width: 100%;
 		font-size: 30px;
 		font-weight: 200;
-		color: whitesmoke;
+		color: black;
+		font-family: 'Source Code Pro', monospace;
 	}
-
+	
 	.home-blurb span {
 		font-weight: 900;
-		font-family: 'Source Code Pro',
-		monospace;
+		font-family: 'Courier Prime', sans-serif;
 		color: #006B6B;
 		color: #2bbdbd;
 	}
 
 	.home-link {
-		margin-top: 10vh;
 		padding: 0.3em;
 		width: fit-content;
+		border: solid black 2px;
+		border-radius: 33em;
+
 		font-size: 20px;
 		font-weight: 800;
-		border: solid whitesmoke 2px;
-		border-radius: 33em;
-		color: whitesmoke;
+		background-color: rgba(0, 0, 0, 0.3);
+		color: #2bbdbd;
 		text-decoration: none;
 
-		grid-row: 2;
-		grid-column: 2/span 2;
+		grid-row: 1;
+		grid-column: 1;
 		justify-self: center;
+		align-self: center;
+		font-family: 'Source Code Pro', monospace;
 	}
 
 	.home-link:hover {
 		border: solid #006B6B 2px;
 		transform: scale(1.2);
+		background-color: rgba(0, 0, 0, 0.7);
 		transition: ease 1s;
 
-		color: #006B6B;
 		color: #2bbdbd;
 	}
 
@@ -110,14 +113,15 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		justify-content: center;
+		justify-content: end;
 		text-align: center;
 		/* background: rgba(0, 0, 0, 0.1); */
 		animation: fade 4.1s ease-in-out;
 
 		font-size: 30px;
 		color: #2bbdbd;
-		color: whitesmoke;
+		color: black;
+		font-family: 'Source Code Pro', monospace;
 	}
 
 	.home-thumbnail img {

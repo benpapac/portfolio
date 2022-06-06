@@ -1,11 +1,12 @@
 .Nav {
     z-index: 2;
     width: 100vw;
-	background-color: rgba(0, 0, 0, 0.7);
+	/* background-color: rgba(0, 0, 0, 0.7); */
     display: flex;
     justify-content: space-around;
 
 	font-size: 40px;
+	font-family: 'Source Code Pro', monospace;
 }
 
 .Nav p {
