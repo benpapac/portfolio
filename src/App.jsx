@@ -9,7 +9,6 @@ import Projects from './components/Projects/Projects.jsx';
 import Resume from './components/Resume/Resume';
 import Contact from './components/Contact/emailJS';
 
-
 function App() {
 
 
