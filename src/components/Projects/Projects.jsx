@@ -29,7 +29,7 @@ const Projects = () => {
                     id={project.title} 
                     ref={refs[`${projects.indexOf(project)}`]} 
                     className={`project`}
-                    style={{backgroundImage: `url(${project.image})`}}
+                    // style={{backgroundImage: `url(${project.image})`}}
                     >
                         {/* <iframe
                             width="853"
@@ -41,11 +41,11 @@ const Projects = () => {
                             title="Screen cap of LG Mgmt site"
                             style={{zIndex: '3'}}
                         /> */}
-                        <div className='empty'/>
+                        {/* <div className='empty'/> */}
                         <div className={`project-content ${index % 2 ? 'left' : 'right'}`}>
 
                         <div className='project-screencap-box'>
-                        <img className="project-screencap" src={project.image} alt={project.alts.image}/>
+                        <div className="project-screencap" style={{backgroundImage: `url( ${project.image} )` }} alt={project.alts.image}/>
                         <p className='highlights'>{project.highlights}</p>
                         </div>
                         <div className='project-copy'>
