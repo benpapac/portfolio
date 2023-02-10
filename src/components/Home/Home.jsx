@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import Slideshow from "../Slideshow/Slideshow";
+// import Slideshow from "../Slideshow/Slideshow";
 import projects from '../Projects/Projects.json';
 // import './Home-Phone.css';
 import './Home.css';
@@ -58,15 +58,14 @@ const Home = () => {
     })
 
     return (
-        <section className="home-bg">
+        <section className="home-bg" >
 
         {/* Cut intro copy to one sentence. remove Projects copy. Only two panels, translucent. Button instead of link, simpler copy there. Add an accent font.  */}
-            {/* <img  className='background-img' src="https://i.imgur.com/kAajrl0.jpg" alt="Ben holding a cat" /> */}
-
             <div className="home-greeting-box">
                 <h1 className="home-greeting">{text}{underscore}</h1>
-            </div>
+            <div  className='background-img' alt="Ben in a button down" />
 
+            </div>
 
             <section className="home-content-box">
                 <div className="home-blurb">
