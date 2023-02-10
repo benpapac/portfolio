@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import Slideshow from '../Slideshow/Slideshow';
-import resume from '../../assets/_Ben Papac Dev Resume.pdf';
+import resume from '../../assets/Ben Papac Resume.pdf';
 import './Nav.css';
 
 const Nav = () => {
