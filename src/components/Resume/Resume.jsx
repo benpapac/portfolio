@@ -6,7 +6,7 @@ import './Resume.css';
 const Resume = () => {
     return (
         <>
-        <a className='resume-link' href="../../assets/_Ben Papac Dev Resume.pdf" download>Download
+        <a className='resume-link' href="../../assets/Ben Papac Resume.pdf" download>Download
         </a>
         <div className="pdf">
             <Document file={resume} >
